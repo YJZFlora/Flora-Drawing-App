@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <title>Drawing with fun</title>
+    <script src="draw3flora.js"></script>
+    <style>
+      h2{
+        margin-top:20px;
+        text-align: center;
+        color: #8c8a8a;
+      }
+
+      body{
+        background-image:
+      }
+
+      .btn{
+          padding: 20px 20px 20px;
+          margin:0px 10px 10px 20px;
+      }.btn-1{
+        background: #ff7777;
+        margin-top:20px;
+      }.btn-2{
+        background: #ffa277;
+      }.btn-3{
+        background:#ffdf77;
+      }.btn-4{
+        background:#ccfc74;
+      }.btn-5{
+        background:#74fcc1;
+      }.btn-6{
+        background:#66c1a6;
+      }.btn-7{
+        background:#899bff;
+      }.btn-8{
+        background:#9696e0;
+      }.btn-9{
+        background:#c796e0;
+      }.btn-10{
+        background:#e896bc;
+      }.btn-11{
+        background:#FFFFFF;
+        border: 1px solid #d8d8d8;
+      }.btn-12{
+        background:#000000;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="">
+      <h2 >Draw Anything You Want!</h2>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-1">
+            <button type="button" class="btn btn-1" value="#ff7777"></button>
+            <button type="button" class="btn btn-2" value="#ffa277"></button>
+            <button type="button" class="btn btn-3" value="#ffdf77"></button>
+            <button type="button" class="btn btn-4" value ="#ccfc74"></button>
+            <button type="button" class="btn btn-5" value ="#74fcc1"></button>
+            <button type="button" class="btn btn-6" value ="#66c1a6"></button>
+            <button type="button" class="btn btn-7" value ="#899bff"></button>
+            <button type="button" class="btn btn-8" value ="#9696e0"></button>
+            <button type="button" class="btn btn-9" value ="#c796e0"></button>
+            <button type="button" class="btn btn-10" value ="#e896bc"></button>
+            <button type="button" class="btn btn-11" value ="#FFFFFF"></button>
+            <button type="button" class="btn btn-12" value ="#000000"></button>
+            <div class="erase">
+              <span style="font-size: 30px; color: #7f7f7e; margin:20px;" id="erase"><i class="fas fa-eraser"></i></span>
+            </div>
+        </div>
+
+        <div class="col-11">
+          <svg id="draw"></svg>
+        </div>
+      </div>
+    </div>
+  </body>
+
+</html>
